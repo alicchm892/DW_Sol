@@ -92,5 +92,9 @@
     <Build Include="dbo\Stored Procedures\LoadDimCurrency.sql" />
     <Build Include="dbo\Tables\dimReseller.sql" />
     <Build Include="dbo\Stored Procedures\LoadDimReseller.sql" />
+    <Build Include="dbo\Tables\factResellerSales.sql" />
+    <Build Include="dbo\Tables\factInternetSales.sql" />
+    <Build Include="dbo\Stored Procedures\LoadResellerSales.sql" />
+    <Build Include="dbo\Stored Procedures\LoadInternetSales.sql" />
   </ItemGroup>
 </Project>
