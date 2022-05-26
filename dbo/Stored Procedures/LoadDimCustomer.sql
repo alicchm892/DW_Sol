@@ -1,6 +1,4 @@
-﻿
-
-CREATE PROCEDURE [dbo].[LoadDimCustomer]
+﻿CREATE PROCEDURE [dbo].[LoadDimCustomer]
 as
 
 --CREATE TABLE [dbo].[DimCustomer] (
@@ -46,7 +44,7 @@ INSERT INTO dbo.DimCustomer
 
 SELECT
 	C.CustomerID AS [CustomerID],
-	C.AccountNumber AS [CustomerAlternateKey],
+	isnull(C.AccountNumber, 'N/D') AS [CustomerAlternateKey],
 	P.PersonType AS [PersonType],
 	ISNULL(P.Title, 'N/D') AS [Title],
 	P.FirstName AS [FirstName],
